@@ -1,0 +1,1 @@
+[2024-06-30T06:14:05.228+0000] {scheduler_job_runner.py:769} ERROR - Executor reports task instance <TaskInstance: DAG_python_operator_V1.greet_function manual__2024-06-30T06:14:03.582074+00:00 [queued]> finished (success) although the task says it's queued. (Info: None) Was the task killed externally?

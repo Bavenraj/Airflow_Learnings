@@ -1,0 +1,37 @@
+[2024-06-30T07:07:52.537+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-30T07:07:52.620+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: DAG_catchup_backfill.task1 manual__2024-06-30T07:07:50.777560+00:00 [queued]>
+[2024-06-30T07:07:52.642+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: DAG_catchup_backfill.task1 manual__2024-06-30T07:07:50.777560+00:00 [queued]>
+[2024-06-30T07:07:52.643+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-30T07:07:52.677+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): task1> on 2024-06-30 07:07:50.777560+00:00
+[2024-06-30T07:07:52.691+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'DAG_catchup_backfill', 'task1', 'manual__2024-06-30T07:07:50.777560+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/dag_catchup_backfill.py', '--cfg-path', '/tmp/tmpfxcrwss2']
+[2024-06-30T07:07:52.694+0000] {standard_task_runner.py:91} INFO - Job 48: Subtask task1
+[2024-06-30T07:07:52.696+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=4597) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-06-30T07:07:52.700+0000] {standard_task_runner.py:63} INFO - Started process 4598 to run task
+[2024-06-30T07:07:52.789+0000] {task_command.py:426} INFO - Running <TaskInstance: DAG_catchup_backfill.task1 manual__2024-06-30T07:07:50.777560+00:00 [running]> on host cf712bcdd57c
+[2024-06-30T07:07:52.946+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Bavenraj' AIRFLOW_CTX_DAG_ID='DAG_catchup_backfill' AIRFLOW_CTX_TASK_ID='task1' AIRFLOW_CTX_EXECUTION_DATE='2024-06-30T07:07:50.777560+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-30T07:07:50.777560+00:00'
+[2024-06-30T07:07:52.950+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-30T07:07:52.988+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-06-30T07:07:52.990+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'this is the simple bash command']
+[2024-06-30T07:07:53.009+0000] {subprocess.py:86} INFO - Output:
+[2024-06-30T07:07:53.012+0000] {subprocess.py:93} INFO - /usr/bin/bash: line 1: this: command not found
+[2024-06-30T07:07:53.017+0000] {subprocess.py:97} INFO - Command exited with return code 127
+[2024-06-30T07:07:53.019+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-30T07:07:53.041+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 127.
+[2024-06-30T07:07:53.051+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=DAG_catchup_backfill, task_id=task1, run_id=manual__2024-06-30T07:07:50.777560+00:00, execution_date=20240630T070750, start_date=20240630T070752, end_date=20240630T070753
+[2024-06-30T07:07:53.078+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 48 for task task1 (Bash command failed. The command returned a non-zero exit code 127.; 4598)
+[2024-06-30T07:07:53.120+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-06-30T07:07:53.148+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-30T07:07:53.151+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,28 @@
+[2024-07-01T15:33:46.851+0000] {processor.py:161} INFO - Started process (PID=173) to work on /opt/airflow/dags/dag_taskflow_api.py
+[2024-07-01T15:33:46.884+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_taskflow_api.py for tasks to queue
+[2024-07-01T15:33:46.948+0000] {logging_mixin.py:188} INFO - [2024-07-01T15:33:46.948+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_taskflow_api.py
+[2024-07-01T15:33:47.162+0000] {processor.py:840} INFO - DAG(s) 'dag_taskflow_api' retrieved from /opt/airflow/dags/dag_taskflow_api.py
+[2024-07-01T15:33:47.742+0000] {logging_mixin.py:188} INFO - [2024-07-01T15:33:47.742+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-01T15:33:48.071+0000] {logging_mixin.py:188} INFO - [2024-07-01T15:33:48.071+0000] {dag.py:3954} INFO - Setting next_dagrun for dag_taskflow_api to 2024-07-01 00:00:00+00:00, run_after=2024-07-02 00:00:00+00:00
+[2024-07-01T15:33:48.897+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_taskflow_api.py took 2.108 seconds
+[2024-07-01T15:34:19.832+0000] {processor.py:161} INFO - Started process (PID=209) to work on /opt/airflow/dags/dag_taskflow_api.py
+[2024-07-01T15:34:19.850+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_taskflow_api.py for tasks to queue
+[2024-07-01T15:34:19.854+0000] {logging_mixin.py:188} INFO - [2024-07-01T15:34:19.853+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_taskflow_api.py
+[2024-07-01T15:34:19.919+0000] {processor.py:840} INFO - DAG(s) 'dag_taskflow_api' retrieved from /opt/airflow/dags/dag_taskflow_api.py
+[2024-07-01T15:34:19.983+0000] {logging_mixin.py:188} INFO - [2024-07-01T15:34:19.982+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-01T15:34:20.021+0000] {logging_mixin.py:188} INFO - [2024-07-01T15:34:20.021+0000] {dag.py:3954} INFO - Setting next_dagrun for dag_taskflow_api to 2024-07-01 00:00:00+00:00, run_after=2024-07-02 00:00:00+00:00
+[2024-07-01T15:34:20.060+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_taskflow_api.py took 0.253 seconds
+[2024-07-01T15:34:50.954+0000] {processor.py:161} INFO - Started process (PID=237) to work on /opt/airflow/dags/dag_taskflow_api.py
+[2024-07-01T15:34:50.959+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_taskflow_api.py for tasks to queue
+[2024-07-01T15:34:50.974+0000] {logging_mixin.py:188} INFO - [2024-07-01T15:34:50.962+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_taskflow_api.py
+[2024-07-01T15:34:51.094+0000] {processor.py:840} INFO - DAG(s) 'dag_taskflow_api' retrieved from /opt/airflow/dags/dag_taskflow_api.py
+[2024-07-01T15:34:51.152+0000] {logging_mixin.py:188} INFO - [2024-07-01T15:34:51.151+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-01T15:34:51.199+0000] {logging_mixin.py:188} INFO - [2024-07-01T15:34:51.198+0000] {dag.py:3954} INFO - Setting next_dagrun for dag_taskflow_api to 2024-07-01 00:00:00+00:00, run_after=2024-07-02 00:00:00+00:00
+[2024-07-01T15:34:51.240+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_taskflow_api.py took 0.335 seconds
+[2024-07-01T15:35:21.390+0000] {processor.py:161} INFO - Started process (PID=263) to work on /opt/airflow/dags/dag_taskflow_api.py
+[2024-07-01T15:35:21.391+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_taskflow_api.py for tasks to queue
+[2024-07-01T15:35:21.394+0000] {logging_mixin.py:188} INFO - [2024-07-01T15:35:21.394+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_taskflow_api.py
+[2024-07-01T15:35:21.432+0000] {processor.py:840} INFO - DAG(s) 'dag_taskflow_api' retrieved from /opt/airflow/dags/dag_taskflow_api.py
+[2024-07-01T15:35:21.489+0000] {logging_mixin.py:188} INFO - [2024-07-01T15:35:21.489+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-01T15:35:21.565+0000] {logging_mixin.py:188} INFO - [2024-07-01T15:35:21.564+0000] {dag.py:3954} INFO - Setting next_dagrun for dag_taskflow_api to 2024-07-01 00:00:00+00:00, run_after=2024-07-02 00:00:00+00:00
+[2024-07-01T15:35:21.614+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_taskflow_api.py took 0.237 seconds
