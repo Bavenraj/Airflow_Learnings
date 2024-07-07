@@ -17,14 +17,14 @@ with DAG(
 ) as dag:
     extract = BashOperator(
         task_id = "extract1",
-        bash_command = 'echo "extract"'
+        bash_command = 'echo "extract1"'
     )
     transform = BashOperator(
         task_id = 'transform1',
-        bash_command = 'echo "transform"'
+        bash_command = 'echo "transform1"'
     )
     load = BashOperator(
         task_id = 'load1',
-        bash_command = 'echo "load"'
+        bash_command = 'echo "load1"'
     )
     extract >> transform >> load
