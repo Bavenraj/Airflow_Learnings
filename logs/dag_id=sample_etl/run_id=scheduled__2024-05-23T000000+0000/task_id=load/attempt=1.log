@@ -17,3 +17,5 @@
 [2024-07-07T15:33:03.361+0000] {subprocess.py:97} INFO - Command exited with return code 0
 [2024-07-07T15:33:03.407+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
 [2024-07-07T15:33:04.012+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=sample_etl, task_id=load, run_id=scheduled__2024-05-23T00:00:00+00:00, execution_date=20240523T000000, start_date=20240707T153258, end_date=20240707T153304
+[2024-07-07T15:33:06.320+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-07T15:33:07.594+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

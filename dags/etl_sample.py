@@ -16,7 +16,7 @@ with DAG(
     schedule_interval = timedelta(days=10)
 ) as dag:
     extract = BashOperator(
-        task_id = "extract",
+        task_id = "extract1",
         bash_command = 'echo "extract"'
     )
     transform = BashOperator(

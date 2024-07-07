@@ -18,3 +18,5 @@
 [2024-07-07T15:33:04.680+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
 [2024-07-07T15:33:04.858+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=sample_etl, task_id=transform, run_id=scheduled__2024-05-31T00:00:00+00:00, execution_date=20240531T000000, start_date=20240707T153259, end_date=20240707T153304
 [2024-07-07T15:33:05.595+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-07T15:33:07.058+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-07-07T15:33:07.196+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
