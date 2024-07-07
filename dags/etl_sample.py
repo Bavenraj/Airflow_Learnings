@@ -20,7 +20,7 @@ with DAG(
         bash_command = 'echo "extract"'
     )
     transform = BashOperator(
-        task_id = 'transform',
+        task_id = 'transform1',
         bash_command = 'echo "transform"'
     )
     load = BashOperator(
