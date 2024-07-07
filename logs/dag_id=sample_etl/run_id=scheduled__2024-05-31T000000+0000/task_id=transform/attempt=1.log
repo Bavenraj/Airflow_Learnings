@@ -1,0 +1,20 @@
+[2024-07-07T15:32:58.961+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-07T15:32:59.358+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: sample_etl.transform scheduled__2024-05-31T00:00:00+00:00 [queued]>
+[2024-07-07T15:32:59.708+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: sample_etl.transform scheduled__2024-05-31T00:00:00+00:00 [queued]>
+[2024-07-07T15:32:59.788+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-07-07T15:33:00.367+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): transform> on 2024-05-31 00:00:00+00:00
+[2024-07-07T15:33:00.694+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'sample_etl', 'transform', 'scheduled__2024-05-31T00:00:00+00:00', '--job-id', '212', '--raw', '--subdir', 'DAGS_FOLDER/etl_sample.py', '--cfg-path', '/tmp/tmpk0qgqgsl']
+[2024-07-07T15:33:00.759+0000] {standard_task_runner.py:91} INFO - Job 212: Subtask transform
+[2024-07-07T15:33:00.727+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=2282) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-07T15:33:00.854+0000] {standard_task_runner.py:63} INFO - Started process 2309 to run task
+[2024-07-07T15:33:01.872+0000] {task_command.py:426} INFO - Running <TaskInstance: sample_etl.transform scheduled__2024-05-31T00:00:00+00:00 [running]> on host a10fdcb539f4
+[2024-07-07T15:33:03.790+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='baven' AIRFLOW_CTX_DAG_ID='sample_etl' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2024-05-31T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-31T00:00:00+00:00'
+[2024-07-07T15:33:03.805+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-07T15:33:04.126+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-07-07T15:33:04.185+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo "transform"']
+[2024-07-07T15:33:04.656+0000] {subprocess.py:86} INFO - Output:
+[2024-07-07T15:33:04.666+0000] {subprocess.py:93} INFO - transform
+[2024-07-07T15:33:04.678+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-07-07T15:33:04.680+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-07T15:33:04.858+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=sample_etl, task_id=transform, run_id=scheduled__2024-05-31T00:00:00+00:00, execution_date=20240531T000000, start_date=20240707T153259, end_date=20240707T153304
+[2024-07-07T15:33:05.595+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
