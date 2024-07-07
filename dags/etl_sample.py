@@ -24,7 +24,7 @@ with DAG(
         bash_command = 'echo "transform"'
     )
     load = BashOperator(
-        task_id = 'load',
+        task_id = 'load1',
         bash_command = 'echo "load"'
     )
     extract >> transform >> load
