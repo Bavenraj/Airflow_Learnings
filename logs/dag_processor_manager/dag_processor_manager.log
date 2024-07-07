@@ -6538,3 +6538,33 @@ File Path                                  PID    Runtime      # DAGs    # Error
 [2024-07-01T15:35:23.993+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
 [2024-07-01T15:35:23.988+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
 [2024-07-01T15:35:25.696+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2024-07-07T15:02:03.066+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2024-07-07T15:02:03.069+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2024-07-07T15:02:03.083+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-07-07T15:02:03.085+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-07-07T15:02:05.791+0000] {manager.py:740} INFO - There are 5 files in /opt/airflow/dags
+[2024-07-07T15:02:11.627+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dag_catchup_backfill.py    181  2.71s             0           0
+/opt/airflow/dags/dag_python_operator.py                            0           0
+/opt/airflow/dags/dag_taskflow_api.py                               0           0
+/opt/airflow/dags/our_first_dag.py                                  0           0
+/opt/airflow/dags/simple_dag_example.py      178  3.59s             0           0
+================================================================================
+[2024-07-07T15:02:42.261+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dag_catchup_backfill.py                           1           0  26.20s          2024-07-07T15:02:34
+/opt/airflow/dags/dag_taskflow_api.py                               1           0  19.85s          2024-07-07T15:02:41
+/opt/airflow/dags/simple_dag_example.py                             0           1  10.63s          2024-07-07T15:02:18
+/opt/airflow/dags/dag_python_operator.py     223  6.12s             0           0
+/opt/airflow/dags/our_first_dag.py           236  0.01s             0           0
+================================================================================
+[2024-07-07T15:02:49.692+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15

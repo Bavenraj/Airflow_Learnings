@@ -1,0 +1,18 @@
+[2024-07-07T15:04:39.937+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-07T15:04:40.630+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_taskflow_api.greet scheduled__2024-07-01T00:00:00+00:00 [queued]>
+[2024-07-07T15:04:40.844+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_taskflow_api.greet scheduled__2024-07-01T00:00:00+00:00 [queued]>
+[2024-07-07T15:04:40.849+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-07-07T15:04:42.029+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): greet> on 2024-07-01 00:00:00+00:00
+[2024-07-07T15:04:42.203+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dag_taskflow_api', 'greet', 'scheduled__2024-07-01T00:00:00+00:00', '--job-id', '90', '--raw', '--subdir', 'DAGS_FOLDER/dag_taskflow_api.py', '--cfg-path', '/tmp/tmpl104n6a6']
+[2024-07-07T15:04:42.434+0000] {standard_task_runner.py:91} INFO - Job 90: Subtask greet
+[2024-07-07T15:04:42.693+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=193) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-07T15:04:42.695+0000] {standard_task_runner.py:63} INFO - Started process 210 to run task
+[2024-07-07T15:04:43.811+0000] {task_command.py:426} INFO - Running <TaskInstance: dag_taskflow_api.greet scheduled__2024-07-01T00:00:00+00:00 [running]> on host a10fdcb539f4
+[2024-07-07T15:04:46.695+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='bavenraj' AIRFLOW_CTX_DAG_ID='dag_taskflow_api' AIRFLOW_CTX_TASK_ID='greet' AIRFLOW_CTX_EXECUTION_DATE='2024-07-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-01T00:00:00+00:00'
+[2024-07-07T15:04:46.816+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-07T15:04:46.830+0000] {logging_mixin.py:188} INFO - Hello Tom Jerry Is your age is 23?
+[2024-07-07T15:04:46.870+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-07T15:04:46.875+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-07T15:04:46.960+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dag_taskflow_api, task_id=greet, run_id=scheduled__2024-07-01T00:00:00+00:00, execution_date=20240701T000000, start_date=20240707T150440, end_date=20240707T150446
+[2024-07-07T15:04:47.365+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-07T15:04:47.481+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

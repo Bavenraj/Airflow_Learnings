@@ -1,0 +1,17 @@
+[2024-07-07T15:02:45.888+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-07T15:02:47.027+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: our_first_dag_V2.third_task scheduled__2024-07-01T00:00:00+00:00 [queued]>
+[2024-07-07T15:02:47.109+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: our_first_dag_V2.third_task scheduled__2024-07-01T00:00:00+00:00 [queued]>
+[2024-07-07T15:02:47.127+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-07-07T15:02:47.994+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): third_task> on 2024-07-01 00:00:00+00:00
+[2024-07-07T15:02:48.593+0000] {local_task_job_runner.py:124} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-07-07T15:02:48.595+0000] {local_task_job_runner.py:124} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-07-07T15:02:48.810+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 143
+[2024-07-07T15:02:49.027+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 143
+[2024-07-07T15:02:49.469+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'our_first_dag_V2', 'third_task', 'scheduled__2024-07-01T00:00:00+00:00', '--job-id', '79', '--raw', '--subdir', 'DAGS_FOLDER/our_first_dag.py', '--cfg-path', '/tmp/tmpm8a495pb']
+[2024-07-07T15:02:49.756+0000] {standard_task_runner.py:91} INFO - Job 79: Subtask third_task
+[2024-07-07T15:02:49.717+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=229) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-07T15:02:49.816+0000] {standard_task_runner.py:63} INFO - Started process 253 to run task
+[2024-07-07T15:02:50.011+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-07T15:02:50.024+0000] {process_utils.py:132} INFO - Sending 15 to group 253. PIDs of all processes in the group: [253]
+[2024-07-07T15:02:50.038+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 253
+[2024-07-07T15:02:50.198+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=253, status='terminated', exitcode=<Negsignal.SIGTERM: -15>, started='15:02:47') (253) terminated with exit code -15
