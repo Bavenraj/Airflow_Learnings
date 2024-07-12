@@ -2514,3 +2514,10 @@ airflow.exceptions.AirflowException: The key 'print hello' has to be made of alp
 [2024-07-07T17:54:24.617+0000] {logging_mixin.py:188} INFO - [2024-07-07T17:54:24.616+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-07-07T17:54:24.682+0000] {logging_mixin.py:188} INFO - [2024-07-07T17:54:24.681+0000] {dag.py:3954} INFO - Setting next_dagrun for simple_example to 2024-07-07 00:00:00+00:00, run_after=2024-07-08 00:00:00+00:00
 [2024-07-07T17:54:24.748+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/simple_dag_example.py took 0.294 seconds
+[2024-07-07T17:54:55.432+0000] {processor.py:161} INFO - Started process (PID=12456) to work on /opt/airflow/dags/simple_dag_example.py
+[2024-07-07T17:54:55.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/simple_dag_example.py for tasks to queue
+[2024-07-07T17:54:55.436+0000] {logging_mixin.py:188} INFO - [2024-07-07T17:54:55.435+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/simple_dag_example.py
+[2024-07-07T17:54:55.467+0000] {processor.py:840} INFO - DAG(s) 'simple_example' retrieved from /opt/airflow/dags/simple_dag_example.py
+[2024-07-07T17:54:55.560+0000] {logging_mixin.py:188} INFO - [2024-07-07T17:54:55.559+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-07T17:54:55.627+0000] {logging_mixin.py:188} INFO - [2024-07-07T17:54:55.626+0000] {dag.py:3954} INFO - Setting next_dagrun for simple_example to 2024-07-07 00:00:00+00:00, run_after=2024-07-08 00:00:00+00:00
+[2024-07-07T17:54:55.667+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/simple_dag_example.py took 0.249 seconds
