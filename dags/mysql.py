@@ -2,10 +2,6 @@ from airflow import DAG
 from datetime import datetime, timedelta
 from airflow.operators.bash import BashOperator
 
-from airflow import DAG
-from datetime import datetime, timedelta
-from airflow.operators.bash import BashOperator
-
 default_args = {
     'owner': "baven",
     'retries': 1,
